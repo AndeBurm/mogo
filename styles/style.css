@@ -14,6 +14,11 @@ h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
 
+hr{
+    color: #999999;
+    opacity: .3;
+}
+
 /*container*/
 
 .container{
@@ -215,20 +220,25 @@ h1, h2, h3, h4, h5, h6{
 
 .section{
     padding: 80px 0;
-    text-align: center;
+}
+
+.section--devices{
+    padding-bottom: 0;
+    background: url("../images/section-devices/images/devices-bg-with-op_02.jpg") center no-repeat;
+    background-size: cover;
 }
 
 .section__header{
     width: 100%;
     max-width: 950px;
     margin: 0 auto 40px;
+    text-align: center;
 }
 
 .section__suptitle{
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     color: #333;
-
 }
 
 .section__title{
@@ -250,6 +260,7 @@ h1, h2, h3, h4, h5, h6{
 .section__text{
     color: #999999;
     font-size: 15px;
+    text-align: center;
 }
 
 /*about*/
@@ -338,20 +349,57 @@ h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
 }
 
+/*services*/
 
+.services{
+    display: flex;
+}
 
+.services__item{
+    flex: 1 1 0;
+    padding-left: 85px;
+    padding-right: 35px;
+    position: relative;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
 
+.services__icon{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 1;
+}
 
+.services__title{
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
+.services__text{
+    color: #999999;
+}
 
+/*devices*/
 
+.devices{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
 
+.devices__item{
+    display: block;
+}
 
-
-
-
-
-
-
+.devices__item--iphone{
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    z-index: 1;
+}
 
 
