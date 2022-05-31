@@ -732,3 +732,88 @@ hr{
     max-width: 375px;
     margin-bottom: 30px;
 }
+
+/*blog*/
+
+.blog{
+    display: flex;
+}
+
+.blog__item{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.blog__header{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.blog__image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.blog__date{
+    font-size: 15px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    font-style: italic;
+    background-color: #95e1d3;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    z-index: 1;
+}
+
+.blog__date-day{
+    line-height: 1;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.blog__content{
+    margin-bottom: 10px;
+}
+
+.blog__title{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.blog__title a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog__title a:hover{
+    text-decoration: underline;
+}
+
+.blog__text{
+    color: #999999;
+}
+
+.blog__footer{
+    padding-top: 10px;
+    border-top: 1px solid #e5e5e5;
+    color: #999999;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.blog-stat__item{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.blog-stat__item i{
+    color: #95e1d3;
+}
