@@ -229,6 +229,13 @@ hr{
     margin-bottom: 40px;
 }
 
+.section--what-ppl-say{
+    padding-bottom: 0;
+    background: url("../images/section-what-ppl-say/MoGo_FREE_Template_by_Laaqiq_06.jpg") center no-repeat;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
 .section--gray{
     background-color: #f8f8f8;
 }
@@ -672,5 +679,55 @@ hr{
     height: auto;
 }
 
+/*workers*/
 
+.workers{
+    display: flex;
+    margin-left: 150px;
+}
 
+.workers__item{
+    flex: 1 1 0;
+    padding-left: 85px;
+    position: relative;
+    padding-right: 35px;
+    font-size: 14px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+.workers__pfp{
+    position: absolute;
+    top: 0;
+    left: -50px;
+    z-index: 1;
+}
+
+.workers__name{
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.workers__job{
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.workers__job:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-top: 15px;
+}
+
+.workers__text{
+    color: #999999;
+    max-width: 375px;
+}
