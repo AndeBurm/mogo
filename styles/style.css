@@ -341,6 +341,7 @@ hr{
 .card__job{
     font-style: italic;
     color: #999;
+    font-weight: 300;
 }
 
 /*statistics*/
@@ -607,7 +608,12 @@ hr{
     color: #fff;
 }
 
+/*logos*/
 
+.logos{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
