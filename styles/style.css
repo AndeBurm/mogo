@@ -730,4 +730,5 @@ hr{
 .workers__text{
     color: #999999;
     max-width: 375px;
+    margin-bottom: 30px;
 }
