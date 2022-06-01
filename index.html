@@ -14,13 +14,13 @@
 </head>
 <body>
 
-<header class="header active">
+<header class="header " id="header">
     <div class="container">
         <div class="header__inner">
             <div class="header__logo">MoGo</div>
 
             <nav class="nav">
-                <a class="nav__link" href="#">about</a>
+                <a class="nav__link" href="#" data-scroll="#about">about</a>
                 <a class="nav__link" href="#">service</a>
                 <a class="nav__link" href="#">work</a>
                 <a class="nav__link" href="#">blog</a>
@@ -28,7 +28,7 @@
                 <a class="nav__link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a class="nav__link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             </nav>
-            <button class="nav-toggle active" type="button">
+            <button class="nav-toggle" type="button">
                 <span class="nav-toggle__item">menu</span>
             </button>
         </div>
@@ -37,7 +37,7 @@
 
 <div class="page">
 
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <h2 class="intro__suptitle">creative template</h2>
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-    <section class="section">
+    <section class="section" id="about">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptitle">What we do</h3>
@@ -688,5 +688,7 @@
     </footer>
 
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>

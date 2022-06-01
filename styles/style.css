@@ -97,6 +97,7 @@ hr{
 }
 
 .header.fixed{
+    padding: 10px 0;
     background-color: #eb8b8d;
     position: fixed;
     top: 0;
@@ -1305,7 +1306,7 @@ hr{
 
     /*nav*/
     .nav {
-        /*display: none;*/
+        display: none;
         width: 100%;
         position: absolute;
         top: 100%;
