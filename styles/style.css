@@ -187,6 +187,10 @@ hr{
     z-index: 1;
 }
 
+.nav-toggle:focus{
+    outline: 0;
+}
+
 .nav-toggle.active .nav-toggle__item{
     background: none;
 }
@@ -633,13 +637,17 @@ hr{
 /*reviews*/
 
 .reviews{
-    padding: 0 110px;
     position: relative;
+}
+
+.reviews .slick-slider{
+    padding: 0 110px;
 }
 
 .reviews__item{
     padding-left: 255px;
     position: relative;
+    min-height: 210px;
 }
 
 .reviews__photo{
@@ -676,16 +684,24 @@ hr{
     background-color: #f38181;
 }
 
-.reviews__btn{
+.slick-arrow{
+    display: block;
     font-size: 0;
     color: transparent;
     position: absolute;
     top: 50%;
     z-index: 1;
     transform: translateY(-50%);
+    border: 0;
+    background: none;
+    cursor: pointer;
 }
 
-.reviews__btn:after{
+.slick-arrow:focus{
+    outline: 0;
+}
+
+.slick-arrow:after{
     content: "";
     display: block;
     width: 16px;
@@ -694,12 +710,12 @@ hr{
     border-left: 2px solid #ccc;
 }
 
-.reviews__btn--prev{
+.slick-prev{
     left: 0;
     transform: rotate(-45deg);
 }
 
-.reviews__btn--next{
+.slick-next{
     right: 0;
     transform: rotate(135deg);
 }
@@ -1245,7 +1261,7 @@ hr{
     }
 
     /*reviews*/
-    .reviews{
+    .reviews .slick-slider{
         padding: 0 60px;
     }
 
@@ -1312,6 +1328,10 @@ hr{
         top: 100%;
         left: 0;
         background-color: #eb8b8d;
+    }
+
+    .nav.active{
+        display: block;
     }
 
     .nav__link{
@@ -1486,11 +1506,11 @@ hr{
     }
 
     /*reviews*/
-    .reviews{
+    .reviews .slick-slider{
         padding: 0;
     }
 
-    .reviews__btn{
+    .slick-arrow{
         top: 18%;
     }
 
