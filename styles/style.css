@@ -828,54 +828,52 @@ hr{
 
 .workers{
     display: flex;
-    margin-left: 150px;
+    flex-wrap: wrap;
+    margin-top: 70px;
 }
 
 .workers__item{
-    flex: 1 1 0;
-    padding-left: 85px;
+    width: 50%;
+    padding: 0 45px 0 175px;
     position: relative;
-    padding-right: 35px;
-    font-size: 14px;
     margin-bottom: 60px;
-    margin-top: 60px;
-    margin-right: 60px;
 }
 
 .workers__pfp{
     position: absolute;
     top: 0;
-    left: -50px;
+    left: 40px;
     z-index: 1;
+    border-radius: 50%;
 }
 
 .workers__name{
     color: #333;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
 }
 
 .workers__job{
+    font-size: 15px;
     font-weight: 400;
     color: #333333;
-    margin-bottom: 15px;
     font-style: italic;
 }
 
-.workers__job:after {
+.workers__text{
+    font-size: 15px;
+    color: #999999;
+}
+
+.workers__text:before {
     content: "";
     display: block;
     width: 60px;
     height: 3px;
     background-color: #f38181;
-    margin-top: 15px;
-}
-
-.workers__text{
-    color: #999999;
-    max-width: 375px;
-    margin-bottom: 30px;
+    margin: 15px 0;
 }
 
 /*blog*/
@@ -1260,6 +1258,16 @@ hr{
         border-bottom: 0;
     }
 
+    /*works*/
+    .works{
+        flex-wrap: wrap;
+    }
+
+    .works__col{
+        flex: none;
+        width: 50%;
+    }
+
     /*reviews*/
     .reviews .slick-slider{
         padding: 0 60px;
@@ -1282,7 +1290,6 @@ hr{
 
     .workers__item{
         width: 100%;
-        padding-right: 0;
     }
 
     .works__item:last-child{
@@ -1395,6 +1402,16 @@ hr{
         left: 0;
     }
 
+    .works__col{
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .works__image{
+        margin-bottom: 10px;
+    }
+
     /*wedo*/
     .wedo__img{
         display: none;
@@ -1421,17 +1438,6 @@ hr{
     .reviews__author{
         font-size: 20px;
     }
-
-    /*works*/
-    .works{
-        flex-wrap: wrap;
-    }
-
-    .works__col{
-        flex: none;
-        width: 50%;
-    }
-
     /*blog*/
     .blog{
         max-width: 380px;
@@ -1544,7 +1550,7 @@ hr{
         text-align: center;
     }
 
-    .works__text:before{
+    .workers__text:before{
         margin: 15px auto;
     }
 
